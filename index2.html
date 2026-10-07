@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Preloved Campus</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#home" class="logo">Preloved<span>Campus</span></a>
+    <nav>
+      <a href="#katalog">Katalog</a>
+      <a href="#wishlist">Wishlist</a>
+      <a href="#profil">Profil</a>
+      <a href="#kelola">Kelola</a>
+      <a href="#jual" class="btn btn-small">+ Jual Barang</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h1>Barang bekas kampus,<br>nilai baru untukmu.</h1>
+        <p>Cari, lihat, dan tawarkan barang preloved antar mahasiswa. Hubungi penjual langsung lewat WhatsApp.</p>
+        <form class="search-bar" action="#katalog">
+          <input type="text" placeholder="Cari nama barang...">
+          <button type="submit" class="btn">Cari</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="katalog" class="section">
+      <div class="container">
+        <h2>Katalog Barang</h2>
+        <form class="filters">
+          <select>
+            <option>Semua Kategori</option>
+            <option>Buku &amp; Catatan</option>
+            <option>Elektronik</option>
+            <option>Fashion</option>
+            <option>Perlengkapan Kos</option>
+          </select>
+          <select>
+            <option>Semua Harga</option>
+            <option>&lt; Rp50.000</option>
+            <option>Rp50.000 - Rp200.000</option>
+            <option>&gt; Rp200.000</option>
+          </select>
+          <select>
+            <option>Semua Kondisi</option>
+            <option>Seperti Baru</option>
+            <option>Baik</option>
+            <option>Layak Pakai</option>
+          </select>
+          <select>
+            <option>Semua Lokasi</option>
+            <option>Dekat Kampus UNESA</option>
+            <option>Area Kampus UNESA</option>
+          </select>
+          <button type="submit" class="btn">Terapkan</button>
+        </form>
+        <div class="grid"></div>
+      </div>
+    </section>
+
+    <section id="detail" class="section alt">
+      <div class="container">
+        <h2>Detail Barang</h2>
+        <div class="detail"></div>
+      </div>
+    </section>
+
+    <section id="profil" class="section">
+      <div class="container">
+        <h2>Profil Penjual</h2>
+        <div class="profile"></div>
+        <h3 class="sub">Barang yang dijual</h3>
+        <div class="grid"></div>
+      </div>
+    </section>
+
+    <section id="wishlist" class="section alt">
+      <div class="container">
+        <h2>Wishlist Saya</h2>
+        <p class="meta">Barang yang kamu simpan untuk dilihat kembali.</p>
+        <div class="grid"></div>
+      </div>
+    </section>
+
+    <section id="jual" class="section">
+      <div class="container narrow">
+        <h2>Jual Barang</h2>
+        <form class="form">
+          <label>Nama Barang
+            <input type="text" placeholder="Contoh: Buku Kalkulus Jilid 1">
+          </label>
+          <div class="row">
+            <label>Kategori
+              <select>
+                <option>Buku &amp; Catatan</option>
+                <option>Elektronik</option>
+                <option>Fashion</option>
+                <option>Perlengkapan Kos</option>
+              </select>
+            </label>
+            <label>Kondisi
+              <select>
+                <option>Seperti Baru</option>
+                <option>Baik</option>
+                <option>Layak Pakai</option>
+              </select>
+            </label>
+          </div>
+          <div class="row">
+            <label>Harga (Rp)
+              <input type="number" placeholder="45000">
+            </label>
+            <label>Lokasi
+              <input type="text" placeholder="Dekat Kampus">
+            </label>
+          </div>
+          <label>Nomor WhatsApp
+            <input type="tel" placeholder="6281234567890">
+          </label>
+          <label>Deskripsi
+            <textarea rows="4" placeholder="Ceritakan kondisi dan detail barang..."></textarea>
+          </label>
+          <label>Upload Foto
+            <input type="file" accept="image/*">
+          </label>
+          <button type="submit" class="btn">Publikasikan</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="kelola" class="section alt">
+      <div class="container">
+        <h2>Kelola Barang Saya</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Barang</th><th>Harga</th><th>Status</th><th>Aksi</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Preloved Campus · Cari, lihat, dan tawarkan barang preloved antar mahasiswa.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
