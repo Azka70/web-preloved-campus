@@ -1,5 +1,5 @@
 (function () {
-  const KEY = 'preloved-items-v2', WKEY = 'preloved-wishlist-v1';
+  const KEY = 'preloved-items-v3', WKEY = 'preloved-wishlist-v3';
   const ME = { nama: 'Andi ', kampus: 'Universitas Negeri Surabaya', wa: '6282123983900' };
   const SARI = { nama: 'Sari Dewi', kampus: 'Universitas Negeri Surabaya', wa: '6281298765432' };
 
